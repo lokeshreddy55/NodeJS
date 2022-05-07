@@ -19,6 +19,16 @@ let server = http.createServer((req, res) => {
         res.write('</html>');
         return res.end();
     }
+   /* if (url === "/") {                                       //it will be not in html format
+        res.write(
+            '<h2>Hello from Node.js server!!</h2>');
+        return res.end();
+    }
+    if (url === "/about") {                                    //it will be
+        res.write(
+            '<body><h2>About Node.js server!!!</h2></body>');
+        return res.end();
+    } */
 });
 server.listen(3000, () => {
     console.log("Server listening on port 3000");
